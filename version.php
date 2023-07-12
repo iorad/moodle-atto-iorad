@@ -24,9 +24,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+/** @var object $plugin */
 $plugin->component = 'atto_iorad';
-$plugin->release = '1.0.0';
-$plugin->version = 2023052501;
-$plugin->requires = 2018051700;
-$plugin->supported = [35, 400];
+$plugin->release = 'v1.0.2';
+$plugin->version = 2023070300;
+$plugin->requires = 2022112800;
+$plugin->supported = [401, 402];
+$plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = [];

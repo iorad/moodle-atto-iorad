@@ -1,3 +1,4 @@
+<?php
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -14,15 +15,33 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Example module for the plugintype_pluginname plugin.
+ * Atto text editor integration version file.
  *
- * @module atto_iorad/main
- * @copyright 2023, iorad <info@iorad.com>
+ * @package atto_iorad
+ * @copyright 2023 iorad <info@iorad.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-import {fetchThings} from './repository';
+defined('MOODLE_INTERNAL') || die();
 
-export const updateThings = (thingData) => {
-    return fetchThings(thingData);
-};
+/**
+ * Initialise the js strings required for this module.
+ */
+function atto_iorad_strings_for_js() {
+    global $PAGE;
+
+    $PAGE->requires->strings_for_js([
+        'button_title',
+        'modal_title',
+        'save_iorad',
+        'cancel',
+        'input_url_label',
+        'input_url_placeholder',
+        'invalid_url',
+        'input_iframe_label',
+        'input_iframe_placeholder',
+        'invalid_iframe',
+        'swicth_to_url',
+        'swicth_to_iframe',
+    ], 'atto_iorad');
+}

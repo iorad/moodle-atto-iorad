@@ -23,5 +23,20 @@
  * @license https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Embed iorad tutorial';
+$string['pluginname'] = 'iorad';
 $string['privacy:metadata'] = 'The atto_iorad plugin does not store any personal data.';
+
+$string['button_title'] = 'iorad';
+$string['modal_title'] = 'iorad tutorial';
+$string['save_iorad'] = 'Save iorad';
+$string['cancel'] = 'Cancel';
+
+$string['input_url_label'] = 'iorad player link';
+$string['input_url_placeholder'] = 'Paste iorad direct player link here';
+$string['invalid_url'] = 'Incorrect iorad tutorial URL';
+
+$string['input_iframe_label'] = 'iorad embed code';
+$string['input_iframe_placeholder'] = 'Paste iorad embed code here';
+$string['invalid_iframe'] = 'Incorrect iorad embed code';
+$string['swicth_to_url'] = 'Switch to player only';
+$string['swicth_to_iframe'] = 'Switch to step list';
